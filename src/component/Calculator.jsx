@@ -34,9 +34,13 @@ function Calculator() {
         if (evaluateExp){
           setResult(evaluateExp);
           setDisplay(true);
+        }else if (input === ""){
+          setDisplay(true);
+          setResult("Error");
         }else{
           setDisplay(true)
-          setResult("Error");
+          setResult(evaluateExp)
+          console.log(result);
         }
       }catch(e){
         setResult(e);
