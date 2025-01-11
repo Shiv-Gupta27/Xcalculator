@@ -15,7 +15,7 @@ function Calculator() {
       const value = e.target.value;
       if (value === "=") {
         calculateResult();
-      } else if (value === "c") {
+      } else if (value === "C") {
         handleClear();
       } else {
         setInput((prev) => prev + value);
@@ -72,7 +72,7 @@ function Calculator() {
           <Button str = {2} handleClick= {handleClick} />
           <Button str = {3} handleClick= {handleClick} />
           <Button str = {"*"} handleClick= {handleClick} />
-          <Button str = {"c"} handleClick= {handleClick} />
+          <Button str = {"C"} handleClick= {handleClick} />
           <Button str = {0} handleClick= {handleClick} />
           <Button str = {"="} handleClick= {handleClick} />
           <Button str = {"/"} handleClick= {handleClick} />
